@@ -6,7 +6,7 @@ export default function BookList({ onSelectBook }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:8080/books')
+    fetch('https://bible-api-alpha.vercel.app/books')
       .then(res => res.json())
       .then(data => {
         setBooks(data);

@@ -9,7 +9,7 @@ export default function ChapterList({ bookId, onSelectChapter }) {
     if (!bookId) return;
     
     setLoading(true);
-    fetch(`http://localhost:8080/chapters?bookId=${bookId}`)
+    fetch(`https://bible-api-alpha.vercel.app/chapters?bookId=${bookId}`)
       .then(res => res.json())
       .then(data => {
         setChapters(data);
