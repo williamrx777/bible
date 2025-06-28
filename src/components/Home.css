@@ -1,0 +1,176 @@
+/* src/components/Home.css */
+.verse-container {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .verse-text {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    position: relative;
+    padding-left: 2.5rem;
+  }
+  
+  .verse-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background: #0d6efd;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chapter-btn {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  
+  .chapter-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    background-color: #f0f8ff;
+  }
+  /* Adicione estas regras ao seu Home.css existente */
+
+/* Estilos gerais para o layout */
+.d-flex {
+    display: flex;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .min-vh-100 {
+    min-height: 100vh;
+  }
+  
+  .flex-grow-1 {
+    flex-grow: 1;
+  }
+  
+  .mt-auto {
+    margin-top: auto;
+  }
+  
+  /* Estilos específicos para o header e footer */
+  header {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Melhorias de responsividade */
+  @media (max-width: 768px) {
+    .py-4 {
+      padding-top: 1.5rem !important;
+      padding-bottom: 1.5rem !important;
+    }
+    
+    header .py-3 {
+      padding-top: 0.75rem !important;
+      padding-bottom: 0.75rem !important;
+    }
+    
+    footer .py-4 {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+    }
+  }
+  
+  /* Ajustes para o botão de voltar */
+  .btn-light {
+    background-color: #fff;
+    color: #0d6efd;
+    border: 1px solid #dee2e6;
+  }
+  
+  .btn-light:hover {
+    background-color: #f8f9fa;
+  }
+
+  /* Adicione ao final do seu Home.css existente */
+
+/* Estilos para a busca */
+.search-results .badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+  }
+  
+  .search-results h5 {
+    margin-bottom: 0.75rem;
+  }
+  
+  .search-results p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  /* Barra de busca */
+  .input-group .form-control {
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+  
+  .input-group .btn {
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .search-results .badge {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.6rem;
+    }
+    
+    .search-results p {
+      font-size: 1rem;
+    }
+    
+    header .small {
+      font-size: 0.75rem;
+    }
+  }
+
+  /* Adicione ao final do seu Home.css */
+
+/* Estilos para os resultados da busca */
+.search-result-item {
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .search-result-item:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Estilo para versículo destacado */
+  .highlighted-verse {
+    background-color: #fff9c4;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 3px solid #ffc107;
+    animation: highlightPulse 2s ease-in-out;
+  }
+  
+  @keyframes highlightPulse {
+    0% { background-color: #fff9c4; }
+    50% { background-color: #fff176; }
+    100% { background-color: #fff9c4; }
+  }
