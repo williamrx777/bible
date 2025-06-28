@@ -35,7 +35,7 @@ export default function Home() {
     setSearchError(null);
     
     try {
-      const response = await fetch(`http://localhost:8080/search?q=${encodeURIComponent(query)}`);
+      const response = await fetch(`https://bible-api-alpha.vercel.app/search?q=${encodeURIComponent(query)}`);
       if (!response.ok) {
         throw new Error(`Erro na busca: ${response.status}`);
       }
@@ -262,7 +262,7 @@ export default function Home() {
               <p className="mb-0">Gloria a Deus</p>
             </Col>
             <Col md={6} className="text-center text-md-end">
-              <p className="mb-1">Desenvolvido por <a href="https://github.com/williamverhaeghe" target="_blank" rel="noopener noreferrer" className="text-white">William</a></p>
+              <p className="mb-1">Desenvolvido por <a href="https://github.com/williamrx777" target="_blank" rel="noopener noreferrer" className="text-white">William</a></p>
             </Col>
           </Row>
         </Container>
