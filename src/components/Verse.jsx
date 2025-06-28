@@ -12,7 +12,7 @@ export default function VerseList({ chapterId, highlightVerse }) {
     if (!chapterId) return;
 
     setLoading(true);
-    fetch(`http://localhost:8080/verses?chapterId=${chapterId}`)
+    fetch(`https://bible-api-alpha.vercel.app/verses?chapterId=${chapterId}`)
       .then((res) => {
         if (!res.ok) throw new Error(`Erro HTTP: ${res.status}`);
         return res.json();
